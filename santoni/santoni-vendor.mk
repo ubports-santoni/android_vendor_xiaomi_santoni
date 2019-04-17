@@ -1,4 +1,4 @@
-# Copyright (C) 2017 The CyanogenMod Project
+# Copyright (C) 2017-2019 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -43,7 +43,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/santoni/proprietary/bin/pm-service:system/bin/pm-service \
     vendor/xiaomi/santoni/proprietary/bin/port-bridge:system/bin/port-bridge \
     vendor/xiaomi/santoni/proprietary/bin/qseecomd:system/bin/qseecomd \
-    vendor/xiaomi/santoni/proprietary/bin/qti:system/bin/qti \
     vendor/xiaomi/santoni/proprietary/bin/radish:system/bin/radish \
     vendor/xiaomi/santoni/proprietary/bin/rmt_storage:system/bin/rmt_storage \
     vendor/xiaomi/santoni/proprietary/bin/sensors.qcom:system/bin/sensors.qcom \
@@ -200,20 +199,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/santoni/proprietary/etc/surround_sound_3mic/surround_sound_rec_5.1.cfg:system/etc/surround_sound_3mic/surround_sound_rec_5.1.cfg \
     vendor/xiaomi/santoni/proprietary/etc/surround_sound_3mic/surround_sound_rec_AZ.cfg:system/etc/surround_sound_3mic/surround_sound_rec_AZ.cfg \
     vendor/xiaomi/santoni/proprietary/etc/xtra_root_cert.pem:system/etc/xtra_root_cert.pem \
-    vendor/xiaomi/santoni/proprietary/framework/ConnectivityExt.jar:system/framework/ConnectivityExt.jar \
-    vendor/xiaomi/santoni/proprietary/framework/QtiTelephonyServicelibrary.jar:system/framework/QtiTelephonyServicelibrary.jar \
-    vendor/xiaomi/santoni/proprietary/framework/cneapiclient.jar:system/framework/cneapiclient.jar \
-    vendor/xiaomi/santoni/proprietary/framework/com.qti.dpmframework.jar:system/framework/com.qti.dpmframework.jar \
-    vendor/xiaomi/santoni/proprietary/framework/com.qti.snapdragon.sdk.display.jar:system/framework/com.qti.snapdragon.sdk.display.jar \
-    vendor/xiaomi/santoni/proprietary/framework/com.qualcomm.location.vzw_library.jar:system/framework/com.qualcomm.location.vzw_library.jar \
-    vendor/xiaomi/santoni/proprietary/framework/com.quicinc.cne.jar:system/framework/com.quicinc.cne.jar \
-    vendor/xiaomi/santoni/proprietary/framework/dpmapi.jar:system/framework/dpmapi.jar \
-    vendor/xiaomi/santoni/proprietary/framework/embmslibrary.jar:system/framework/embmslibrary.jar \
-    vendor/xiaomi/santoni/proprietary/framework/imscmlibrary.jar:system/framework/imscmlibrary.jar \
-    vendor/xiaomi/santoni/proprietary/framework/izat.xt.srv.jar:system/framework/izat.xt.srv.jar \
-    vendor/xiaomi/santoni/proprietary/framework/qti-telephony-common.jar:system/framework/qti-telephony-common.jar \
-    vendor/xiaomi/santoni/proprietary/framework/rcsimssettings.jar:system/framework/rcsimssettings.jar \
-    vendor/xiaomi/santoni/proprietary/framework/tcmclient.jar:system/framework/tcmclient.jar \
     vendor/xiaomi/santoni/proprietary/lib/hw/camera.msm8937.so:system/lib/hw/camera.msm8937.so \
     vendor/xiaomi/santoni/proprietary/lib/hw/consumerir.default.so:system/lib/hw/consumerir.default.so \
     vendor/xiaomi/santoni/proprietary/lib/hw/fingerprint.default.so:system/lib/hw/fingerprint.default.so \
@@ -244,11 +229,10 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/santoni/proprietary/lib/libstagefright_soft_flacdec.so:system/lib/libstagefright_soft_flacdec.so \
     vendor/xiaomi/santoni/proprietary/lib/libvpplibrary.so:system/lib/libvpplibrary.so \
     vendor/xiaomi/santoni/proprietary/lib/soundfx/libdirac.so:system/lib/soundfx/libdirac.so \
-    vendor/xiaomi/santoni/proprietary/lib64/hw/fingerprint.default.so:system/lib64/hw/fingerprint.default.so \
-    vendor/xiaomi/santoni/proprietary/lib64/hw/fingerprint.fpc.so:system/lib64/hw/fingerprint.fpc.so \
-    vendor/xiaomi/santoni/proprietary/lib64/hw/gxfingerprint.default.so:system/lib64/hw/gxfingerprint.default.so \
-    vendor/xiaomi/santoni/proprietary/lib64/hw/fingerprint.goodix.so:system/lib64/hw/fingerprint.goodix.so \
-    vendor/xiaomi/santoni/proprietary/lib64//hw/fingerprint.msm8937.so:system/lib64/hw/fingerprint.msm8937.so \
+    vendor/xiaomi/santoni/proprietary/lib64//hw/fingerprint.default.so:system/lib64//hw/fingerprint.default.so \
+    vendor/xiaomi/santoni/proprietary/lib64//hw/fingerprint.fpc.so:system/lib64//hw/fingerprint.fpc.so \
+    vendor/xiaomi/santoni/proprietary/lib64//hw/fingerprint.goodix.so:system/lib64//hw/fingerprint.goodix.so \
+    vendor/xiaomi/santoni/proprietary/lib64//hw/fingerprint.msm8937.so:system/lib64//hw/fingerprint.msm8937.so \
     vendor/xiaomi/santoni/proprietary/lib64/hw/consumerir.default.so:system/lib64/hw/consumerir.default.so \
     vendor/xiaomi/santoni/proprietary/lib64/libOmxAacEnc.so:system/lib64/libOmxAacEnc.so \
     vendor/xiaomi/santoni/proprietary/lib64/libOmxAmrEnc.so:system/lib64/libOmxAmrEnc.so \
@@ -814,11 +798,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/santoni/proprietary/vendor/lib/mmi_camera.so:system/vendor/lib/mmi_camera.so \
     vendor/xiaomi/santoni/proprietary/vendor/lib/mmi_cpu.so:system/vendor/lib/mmi_cpu.so \
     vendor/xiaomi/santoni/proprietary/vendor/lib/mmi_flashlight.so:system/vendor/lib/mmi_flashlight.so \
-	vendor/xiaomi/santoni/proprietary/vendor/lib/mmi_fingerprint.so:system/vendor/lib/mmi_fingerprint.so \
     vendor/xiaomi/santoni/proprietary/vendor/lib/mmi_fm.so:system/vendor/lib/mmi_fm.so \
     vendor/xiaomi/santoni/proprietary/vendor/lib/mmi_gps.so:system/vendor/lib/mmi_gps.so \
     vendor/xiaomi/santoni/proprietary/vendor/lib/mmi_headset.so:system/vendor/lib/mmi_headset.so \
-	vendor/xiaomi/santoni/proprietary/vendor/lib/mmi_infrared.so:system/vendor/lib/mmi_infrared.so \
     vendor/xiaomi/santoni/proprietary/vendor/lib/mmi_key.so:system/vendor/lib/mmi_key.so \
     vendor/xiaomi/santoni/proprietary/vendor/lib/mmi_lcd.so:system/vendor/lib/mmi_lcd.so \
     vendor/xiaomi/santoni/proprietary/vendor/lib/mmi_light.so:system/vendor/lib/mmi_light.so \
@@ -1102,7 +1084,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/santoni/proprietary/vendor/lib64/libthermalioctl.so:system/vendor/lib64/libthermalioctl.so \
     vendor/xiaomi/santoni/proprietary/vendor/lib64/libtzdrmgenprov.so:system/vendor/lib64/libtzdrmgenprov.so \
     vendor/xiaomi/santoni/proprietary/vendor/lib64/libulp2.so:system/vendor/lib64/libulp2.so \
-    vendor/xiaomi/santoni/proprietary/vendor/lib64/libuiblur.so:system/vendor/lib64/libuiblur.so \
     vendor/xiaomi/santoni/proprietary/vendor/lib64/libvendorconn.so:system/vendor/lib64/libvendorconn.so \
     vendor/xiaomi/santoni/proprietary/vendor/lib64/libvoice-svc.so:system/vendor/lib64/libvoice-svc.so \
     vendor/xiaomi/santoni/proprietary/vendor/lib64/libwfdavenhancements.so:system/vendor/lib64/libwfdavenhancements.so \
@@ -1131,11 +1112,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/santoni/proprietary/vendor/lib64/mmi_bluetooth.so:system/vendor/lib64/mmi_bluetooth.so \
     vendor/xiaomi/santoni/proprietary/vendor/lib64/mmi_cpu.so:system/vendor/lib64/mmi_cpu.so \
     vendor/xiaomi/santoni/proprietary/vendor/lib64/mmi_flashlight.so:system/vendor/lib64/mmi_flashlight.so \
-	vendor/xiaomi/santoni/proprietary/vendor/lib64/mmi_fingerprint.so:system/vendor/lib64/mmi_fingerprint.so \
     vendor/xiaomi/santoni/proprietary/vendor/lib64/mmi_fm.so:system/vendor/lib64/mmi_fm.so \
     vendor/xiaomi/santoni/proprietary/vendor/lib64/mmi_gps.so:system/vendor/lib64/mmi_gps.so \
     vendor/xiaomi/santoni/proprietary/vendor/lib64/mmi_headset.so:system/vendor/lib64/mmi_headset.so \
-	vendor/xiaomi/santoni/proprietary/vendor/lib64/mmi_infrared.so:system/vendor/lib64/mmi_infrared.so \
     vendor/xiaomi/santoni/proprietary/vendor/lib64/mmi_key.so:system/vendor/lib64/mmi_key.so \
     vendor/xiaomi/santoni/proprietary/vendor/lib64/mmi_lcd.so:system/vendor/lib64/mmi_lcd.so \
     vendor/xiaomi/santoni/proprietary/vendor/lib64/mmi_light.so:system/vendor/lib64/mmi_light.so \
@@ -1158,20 +1137,4 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libtime_genoff \
     libts_detected_face_hal \
-    libts_face_beautify_hal \
-    QtiTelephonyService \
-    TimeService \
-    datastatusnotification \
-    embms \
-    fastdormancy \
-    shutdownlistener \
-    CNEService \
-    QtiTetherService \
-    com.qualcomm.location \
-    qcrilmsgtunnel \
-    ims \
-    imssettings \
-	QtiTelephonyServicelibrary \
-    com.qti.location.sdk \
-	qti-telephony-common \
-    qcrilhook
+    libts_face_beautify_hal
